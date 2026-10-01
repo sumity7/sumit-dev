@@ -13,11 +13,11 @@
        PRIMARY SEO
   ========================== -->
 
-  <title>Sumit Yadav | Full Stack Developer | Java & MERN Developer</title>
+  <title>Sumit Yadav Developer | Full Stack (Java & MERN) Portfolio</title>
 
   <meta
     name="description"
-    content="Sumit Yadav is a Full Stack Developer and B.Tech CSE graduate skilled in Java, MERN Stack, React, Node.js, MongoDB, Python, AI and Machine Learning."
+    content="Official portfolio of Sumit Yadav Developer, a Full Stack Developer from Lucknow, India. Java, MERN Stack, Next.js, React, Node.js and MongoDB projects and resume."
   />
 
   <meta
@@ -44,17 +44,21 @@
 
   <meta
     property="og:type"
-    content="website"
+    content="profile"
   />
+
+  <meta property="og:locale" content="en_IN" />
+  <meta property="profile:first_name" content="Sumit" />
+  <meta property="profile:last_name" content="Yadav" />
 
   <meta
     property="og:title"
-    content="Sumit Yadav | Full Stack Developer"
+    content="Sumit Yadav Developer | Full Stack (Java & MERN) Portfolio"
   />
 
   <meta
     property="og:description"
-    content="Portfolio of Sumit Yadav — Full Stack Developer, Java Developer and B.Tech CSE graduate."
+    content="Official portfolio of Sumit Yadav Developer, a Full Stack Developer building MERN and Java projects. View projects and resume."
   />
 
   <meta
@@ -64,13 +68,15 @@
 
   <meta
     property="og:site_name"
-    content="Sumit Yadav Portfolio"
+    content="Sumit Yadav Developer"
   />
 
   <meta
     property="og:image"
     content="https://sumitydev.vercel.app/profile.jpeg"
   />
+
+  <meta property="og:image:alt" content="Sumit Yadav, Full Stack Developer" />
 
   <!-- =========================
        TWITTER / X
@@ -83,18 +89,20 @@
 
   <meta
     name="twitter:title"
-    content="Sumit Yadav | Full Stack Developer"
+    content="Sumit Yadav Developer | Full Stack (Java & MERN) Portfolio"
   />
 
   <meta
     name="twitter:description"
-    content="Portfolio of Sumit Yadav — Full Stack Developer, Java Developer and B.Tech CSE graduate."
+    content="Official portfolio of Sumit Yadav Developer, a Full Stack Developer building MERN and Java projects. View projects and resume."
   />
 
   <meta
     name="twitter:image"
     content="https://sumitydev.vercel.app/profile.jpeg"
   />
+
+  <meta name="twitter:image:alt" content="Sumit Yadav, Full Stack Developer" />
 
   <!-- =========================
        PERSON STRUCTURED DATA
@@ -103,43 +111,49 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Sumit Yadav",
-    "url": "https://sumitydev.vercel.app/",
-    "image": "https://sumitydev.vercel.app/profile.jpeg",
-    "jobTitle": "Full Stack Developer",
-    "description": "Full Stack Developer and B.Tech Computer Science Engineering graduate skilled in Java, MERN Stack, Python, Artificial Intelligence and Machine Learning.",
-    "email": "mailto:syadav787034@gmail.com",
-    "telephone": "+917870341191",
-    "sameAs": [
-      "https://github.com/sumity7",
-      "https://www.linkedin.com/in/sumit-yadav-a1296827a/",
-      "https://www.instagram.com/deadly_sumit/?hl=en",
-      "https://www.facebook.com/profile.php?id=100030498017177",
-      "https://wa.me/917870341191"
-    ],
-    "knowsAbout": [
-      "Full Stack Development",
-      "Java",
-      "C",
-      "C++",
-      "JavaScript",
-      "React",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "MySQL",
-      "Python",
-      "Artificial Intelligence",
-      "Machine Learning",
-      "REST APIs",
-      "JWT Authentication",
-      "MERN Stack",
-      "Next.js",
-      "Tailwind CSS",
-      "Razorpay",
-      "Google Gemini API",
-      "Role-Based Access Control"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://sumitydev.vercel.app/#website",
+        "url": "https://sumitydev.vercel.app/",
+        "name": "Sumit Yadav Developer",
+        "alternateName": ["Sumit Yadav Portfolio", "Sumit Yadav Full Stack Developer"],
+        "inLanguage": "en",
+        "publisher": { "@id": "https://sumitydev.vercel.app/#person" }
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://sumitydev.vercel.app/#profilepage",
+        "url": "https://sumitydev.vercel.app/",
+        "name": "Sumit Yadav Developer | Full Stack (Java & MERN) Portfolio",
+        "isPartOf": { "@id": "https://sumitydev.vercel.app/#website" },
+        "mainEntity": { "@id": "https://sumitydev.vercel.app/#person" },
+        "dateModified": "2026-10-02"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://sumitydev.vercel.app/#person",
+        "name": "Sumit Yadav",
+        "alternateName": ["Sumit Yadav Developer", "Sumit Yadav Full Stack Developer", "sumity7"],
+        "url": "https://sumitydev.vercel.app/",
+        "image": "https://sumitydev.vercel.app/profile.jpeg",
+        "jobTitle": "Full Stack Developer",
+        "description": "Sumit Yadav is a Full Stack Developer and B.Tech Computer Science Engineering graduate from Lucknow, India, skilled in Java, the MERN Stack, Next.js, REST APIs and cloud deployment.",
+        "email": "mailto:syadav787034@gmail.com",
+        "address": { "@type": "PostalAddress", "addressLocality": "Lucknow", "addressCountry": "IN" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "BBDNIIT, Lucknow" },
+        "sameAs": [
+          "https://github.com/sumity7",
+          "https://www.linkedin.com/in/sumit-yadav-a1296827a/",
+          "https://www.instagram.com/deadly_sumit/",
+          "https://www.facebook.com/profile.php?id=100030498017177"
+        ],
+        "knowsAbout": [
+          "Full Stack Development", "Java", "JavaScript", "React", "Next.js", "Node.js", "Express.js",
+          "MongoDB", "MySQL", "Tailwind CSS", "REST APIs", "JWT Authentication",
+          "Role-Based Access Control", "Razorpay", "Google Gemini API", "MERN Stack"
+        ]
+      }
     ]
   }
   </script>
@@ -176,7 +190,7 @@
 
   <link
     rel="stylesheet"
-    href="style.css?v=9"
+    href="style.css?v=10"
   >
 </head>
 
@@ -295,7 +309,7 @@
         </p>
 
         <h1 class="display-title reveal-up">
-          FULL STACK<span class="sr-only"> Developer</span>
+          <span class="sr-only">Sumit Yadav — </span>FULL STACK<span class="sr-only"> Developer</span>
         </h1>
 
         <div class="hero-row reveal-up">
@@ -1566,7 +1580,7 @@
           <a
             href="https://github.com/sumity7"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="me noopener noreferrer"
           >
             <i class="fa-brands fa-github"></i>
             GitHub
@@ -1575,7 +1589,7 @@
           <a
             href="https://www.linkedin.com/in/sumit-yadav-a1296827a/"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="me noopener noreferrer"
           >
             <i class="fa-brands fa-linkedin"></i>
             LinkedIn
@@ -1584,7 +1598,7 @@
           <a
             href="https://www.instagram.com/deadly_sumit/?hl=en"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="me noopener noreferrer"
           >
             <i class="fa-brands fa-instagram"></i>
             Instagram
@@ -1668,7 +1682,7 @@
        MAIN JAVASCRIPT
   ========================== -->
 
-  <script src="script.js?v=premium-4"></script>
+  <script src="script.js?v=premium-5"></script>
 
 </body>
 </html>

@@ -18,7 +18,7 @@ window.addEventListener('load', () => {
 // Cursor + spotlight
 const dot=$('.cursor-dot'), ring=$('.cursor-ring'), spot=$('#spotlight');
 let mx=0,my=0,rx=0,ry=0;
-window.addEventListener('mousemove',e=>{if(!document.body.classList.contains('cursor-on'))document.body.classList.add('cursor-on');mx=e.clientX;my=e.clientY;if(dot){dot.style.transform=`translate(${mx-3.5}px,${my-3.5}px)`}if(spot){spot.style.left=mx+'px';spot.style.top=my+'px'}});
+window.addEventListener('mousemove',e=>{if(finePointer && !reduceMotion && !document.body.classList.contains('cursor-on'))document.body.classList.add('cursor-on');mx=e.clientX;my=e.clientY;if(dot){dot.style.transform=`translate(${mx-3.5}px,${my-3.5}px)`}if(spot){spot.style.left=mx+'px';spot.style.top=my+'px'}});
 function cursorLoop(){rx+=(mx-rx)*.13;ry+=(my-ry)*.13;if(ring)ring.style.transform=`translate(${rx-19}px,${ry-19}px)`;requestAnimationFrame(cursorLoop)}if(finePointer && !reduceMotion) cursorLoop();
 $$('a,button,.tilt-card').forEach(el=>{el.addEventListener('mouseenter',()=>ring?.classList.add('hover'));el.addEventListener('mouseleave',()=>ring?.classList.remove('hover'))});
 

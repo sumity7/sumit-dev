@@ -333,3 +333,9 @@ body.menu-open{overflow:hidden}
 .project-6 .project-stage{order:-1}
 @media(max-width:1000px){.project-6 .project-sticky{grid-template-columns:1fr;gap:35px;padding-top:95px}.project-6 .project-stage{order:0}}
 @media(max-width:680px){.project-6 .project-sticky{display:flex;flex-direction:column;padding:0;height:auto;position:relative;overflow:visible}}
+
+/* One cursor only: hide the native pointer while the custom dot + ring is active */
+@media (hover:hover) and (pointer:fine){
+  body.cursor-on,body.cursor-on *{cursor:none!important}
+}
+.cursor-dot,.cursor-ring{will-change:transform}

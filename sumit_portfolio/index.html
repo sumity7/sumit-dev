@@ -134,7 +134,12 @@
       "Machine Learning",
       "REST APIs",
       "JWT Authentication",
-      "MERN Stack"
+      "MERN Stack",
+      "Next.js",
+      "Tailwind CSS",
+      "Razorpay",
+      "Google Gemini API",
+      "Role-Based Access Control"
     ]
   }
   </script>
@@ -147,7 +152,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap"
     rel="stylesheet"
   >
 
@@ -171,11 +176,13 @@
 
   <link
     rel="stylesheet"
-    href="style.css?v=3"
+    href="style.css?v=9"
   >
 </head>
 
 <body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- =========================
        LOADER
@@ -225,7 +232,7 @@
       <span>S</span><b>Y</b>
     </a>
 
-    <nav class="desktop-nav">
+    <nav class="desktop-nav" aria-label="Primary">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#work">Work</a>
@@ -247,6 +254,8 @@
       class="menu-btn"
       id="menuBtn"
       aria-label="Open menu"
+      aria-controls="mobileMenu"
+      aria-expanded="false"
     >
       <span></span>
       <span></span>
@@ -266,7 +275,7 @@
     <a href="#contact">Contact</a>
   </div>
 
-  <main>
+  <main id="main">
 
     <!-- =========================
          HERO
@@ -286,7 +295,7 @@
         </p>
 
         <h1 class="display-title reveal-up">
-          FULL STACK
+          FULL STACK<span class="sr-only"> Developer</span>
         </h1>
 
         <div class="hero-row reveal-up">
@@ -295,9 +304,9 @@
             I design and build modern full-stack products with clean interfaces, reliable APIs and thoughtful user experiences.
           </div>
 
-          <h1 class="display-title outline">
-            DEVELOPER
-          </h1>
+          <div class="display-title outline" aria-hidden="true">
+            Developer
+          </div>
 
         </div>
 
@@ -331,17 +340,22 @@
             databases and deployment.
           </p>
 
-          <div class="hero-links">
+          <div class="hero-cta">
 
-            <a
-              class="circle-link magnetic"
-              href="#work"
-              aria-label="View projects"
-            >
+            <a class="btn btn-primary magnetic" href="#work">
+              View projects
               <i class="fa-solid fa-arrow-down"></i>
             </a>
 
-            <span>Scroll to explore</span>
+            <a
+              class="btn btn-ghost magnetic"
+              href="Sumit_Yadav_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Resume
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
 
           </div>
 
@@ -377,6 +391,8 @@
         <span>JAVA</span><i>✦</i>
         <span>PYTHON</span><i>✦</i>
         <span>REST API</span><i>✦</i>
+        <span>NEXT.JS</span><i>✦</i>
+        <span>TAILWIND</span><i>✦</i>
 
         <span>REACT</span><i>✦</i>
         <span>NODE.JS</span><i>✦</i>
@@ -386,6 +402,8 @@
         <span>JAVA</span><i>✦</i>
         <span>PYTHON</span><i>✦</i>
         <span>REST API</span><i>✦</i>
+        <span>NEXT.JS</span><i>✦</i>
+        <span>TAILWIND</span><i>✦</i>
 
       </div>
 
@@ -435,7 +453,7 @@
       <div class="facts reveal-up">
 
         <div>
-          <b>03</b>
+          <b>06</b>
           <span>Featured live projects</span>
         </div>
 
@@ -543,6 +561,21 @@
               <span>Tailwind</span>
             </div>
 
+            <div class="light-icon">
+              <i class="devicon-nextjs-plain"></i>
+              <span>Next.js</span>
+            </div>
+
+            <div>
+              <i class="devicon-vitejs-plain colored"></i>
+              <span>Vite</span>
+            </div>
+
+            <div class="token-icon">
+              <b>RWD</b>
+              <span>Responsive UI</span>
+            </div>
+
           </div>
 
         </article>
@@ -580,6 +613,11 @@
               <span>JWT Auth</span>
             </div>
 
+            <div class="token-icon">
+              <b>RBAC</b>
+              <span>Role-Based Access</span>
+            </div>
+
           </div>
 
         </article>
@@ -595,6 +633,11 @@
             <div>
               <i class="devicon-mongodb-plain colored"></i>
               <span>MongoDB</span>
+            </div>
+
+            <div class="token-icon">
+              <b>ODM</b>
+              <span>Mongoose</span>
             </div>
 
             <div>
@@ -636,6 +679,43 @@
 
         </article>
 
+        <article class="skill-row reveal-up">
+
+          <span class="skill-index">05</span>
+
+          <h3>Payments / AI / Email</h3>
+
+          <div class="icons">
+
+            <div class="token-icon">
+              <b>Rs</b>
+              <span>Razorpay</span>
+            </div>
+
+            <div class="token-icon">
+              <b>AI</b>
+              <span>Gemini API</span>
+            </div>
+
+            <div class="token-icon">
+              <b>AI</b>
+              <span>Groq AI</span>
+            </div>
+
+            <div class="token-icon">
+              <b>@</b>
+              <span>Resend</span>
+            </div>
+
+            <div class="token-icon">
+              <b>Mail</b>
+              <span>Nodemailer</span>
+            </div>
+
+          </div>
+
+        </article>
+
       </div>
 
       <div class="concept-strip reveal-up">
@@ -643,6 +723,7 @@
         <span>OOPs</span>
         <span>DBMS</span>
         <span>OPERATING SYSTEMS</span>
+        <span>GIT / GITHUB</span>
       </div>
 
     </section>
@@ -667,11 +748,347 @@
     </section>
 
     <!-- =========================
-         NOVA E-COMMERCE
+         CODEFUSION UI COMPONENT MARKETPLACE
     ========================== -->
 
     <section
       class="project project-1"
+      id="project-codefusion"
+    >
+
+      <div class="project-sticky">
+
+        <div class="project-copy">
+
+          <div class="project-count">
+            01 / 06
+          </div>
+
+          <p class="project-label">
+            UI MARKETPLACE + PAYMENTS
+          </p>
+
+          <h2>
+            CODEFUSION<br>
+            <em>UI Component</em><br>
+            MARKETPLACE
+          </h2>
+
+          <p class="project-desc">
+            A full-stack marketplace with 160+ production-ready UI components across 13+ categories, featuring sandboxed live previews, copy-paste HTML/CSS/JS code, premium access and Razorpay payments.
+          </p>
+
+          <div class="project-points">
+            <span>160+ UI components</span>
+            <span>Razorpay payments</span>
+            <span>OTP email verification</span>
+            <span>Admin dashboard</span>
+          </div>
+
+          <div class="stack">
+            <span>React (Vite)</span>
+            <span>Node.js</span>
+            <span>Express.js</span>
+            <span>MongoDB</span>
+            <span>JWT</span>
+            <span>Razorpay</span>
+            <span>Resend</span>
+          </div>
+
+          <div class="project-actions">
+
+            <a
+              class="pill magnetic"
+              href="https://codefusion.nextgenfusion.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View live
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+            <a
+              class="project-arrow magnetic"
+              href="https://github.com/sumity7/codefusion"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="CodeFusion GitHub Repository"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="project-stage tilt-card">
+
+          <div class="browser-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+            <b>codefusion.nextgenfusion.in</b>
+          </div>
+
+          <a
+            class="project-image-link"
+            href="https://codefusion.nextgenfusion.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open CodeFusion UI Component Marketplace"
+          >
+
+            <img
+              class="project-image"
+              src="assets/projects/codefusion.jpg" width="1440" height="810" decoding="async"
+              alt="CodeFusion UI Component Marketplace project screenshot"
+              loading="lazy"
+            />
+
+            <span class="image-overlay">
+              View Live Project
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </span>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         LIFENEXUS AI LIFE MANAGEMENT PLATFORM
+    ========================== -->
+
+    <section
+      class="project project-2"
+      id="project-lifenexus"
+    >
+
+      <div class="project-sticky">
+
+        <div class="project-copy">
+
+          <div class="project-count">
+            02 / 06
+          </div>
+
+          <p class="project-label">
+            AI + PRODUCTIVITY
+          </p>
+
+          <h2>
+            LIFENEXUS<br>
+            <em>AI Life</em><br>
+            MANAGEMENT
+          </h2>
+
+          <p class="project-desc">
+            An AI-powered personal life management platform that brings tasks, goals, routines, calendar and notes into one dashboard, with Google Gemini for personalized planning and conversational assistance.
+          </p>
+
+          <div class="project-points">
+            <span>Google Gemini AI assistant</span>
+            <span>JWT access + refresh tokens</span>
+            <span>Tasks, goals & routines</span>
+            <span>Calendar & notes</span>
+          </div>
+
+          <div class="stack">
+            <span>React (Vite)</span>
+            <span>Node.js</span>
+            <span>Express.js</span>
+            <span>MongoDB</span>
+            <span>JWT</span>
+            <span>Gemini API</span>
+            <span>Vercel</span>
+            <span>Render</span>
+          </div>
+
+          <div class="project-actions">
+
+            <a
+              class="pill magnetic"
+              href="https://life-nexus-client.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View live
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+            <a
+              class="project-arrow magnetic"
+              href="https://github.com/sumity7/LifeNexus"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LifeNexus GitHub Repository"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="project-stage tilt-card">
+
+          <div class="browser-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+            <b>life-nexus-client.vercel.app</b>
+          </div>
+
+          <a
+            class="project-image-link"
+            href="https://life-nexus-client.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open LifeNexus AI Life Management Platform"
+          >
+
+            <img
+              class="project-image"
+              src="assets/projects/lifenexus.jpg" width="1440" height="810" decoding="async"
+              alt="LifeNexus AI Life Management Platform project screenshot"
+              loading="lazy"
+            />
+
+            <span class="image-overlay">
+              View Live Project
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </span>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         HOTEL MANAGEMENT SYSTEM
+    ========================== -->
+
+    <section
+      class="project project-3"
+      id="project-hotel"
+    >
+
+      <div class="project-sticky">
+
+        <div class="project-copy">
+
+          <div class="project-count">
+            03 / 06
+          </div>
+
+          <p class="project-label">
+            HOSPITALITY + PMS
+          </p>
+
+          <h2>
+            HOTEL<br>
+            <em>Management</em><br>
+            SYSTEM
+          </h2>
+
+          <p class="project-desc">
+            A full-stack property management platform that centralizes reservations, check-in, folio billing, housekeeping, POS, inventory and reporting for daily hotel operations, with role-based staff access and a guest portal.
+          </p>
+
+          <div class="project-points">
+            <span>Reservations &amp; room control</span>
+            <span>Folio, billing &amp; payments</span>
+            <span>Role-based staff access</span>
+            <span>Guest portal &amp; reports</span>
+          </div>
+
+          <div class="stack">
+            <span>React (Vite)</span>
+            <span>Node.js</span>
+            <span>Express.js</span>
+            <span>MongoDB</span>
+            <span>Mongoose</span>
+            <span>JWT</span>
+            <span>Socket.IO</span>
+            <span>Vercel</span>
+            <span>Render</span>
+          </div>
+
+          <div class="project-actions">
+
+            <a
+              class="pill magnetic"
+              href="https://hotel-management-system-xi-seven.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View live
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+            <a
+              class="project-arrow magnetic"
+              href="https://github.com/sumity7/hotel-management-system"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Hotel Management System GitHub Repository"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="project-stage tilt-card">
+
+          <div class="browser-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+            <b>hotel-management-system-xi-seven.vercel.app</b>
+          </div>
+
+          <a
+            class="project-image-link"
+            href="https://hotel-management-system-xi-seven.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open Hotel Management System"
+          >
+
+            <img
+              class="project-image"
+              src="assets/projects/hotel.jpg" width="1440" height="810" decoding="async"
+              alt="Hotel Management System project screenshot"
+              loading="lazy"
+            />
+
+            <span class="image-overlay">
+              View Live Project
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </span>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         NOVA E-COMMERCE
+    ========================== -->
+
+    <section
+      class="project project-4"
       id="project-nova"
     >
 
@@ -680,7 +1097,7 @@
         <div class="project-copy">
 
           <div class="project-count">
-            01 / 03
+            04 / 06
           </div>
 
           <p class="project-label">
@@ -689,7 +1106,7 @@
 
           <h2>
             NOVA<br>
-            <em>E-COMMERCE</em><br>
+            <em>E-commerce</em><br>
             PLATFORM
           </h2>
 
@@ -758,7 +1175,7 @@
 
             <img
               class="project-image"
-              src="https://image.thum.io/get/width/1600/crop/900/noanimate/https://nova-ecommerce-hazel.vercel.app"
+              src="assets/projects/nova.jpg" width="1440" height="810" decoding="async"
               alt="NOVA E-Commerce project screenshot"
               loading="lazy"
             />
@@ -781,7 +1198,7 @@
     ========================== -->
 
     <section
-      class="project project-2"
+      class="project project-5"
       id="project-library"
     >
 
@@ -790,7 +1207,7 @@
         <div class="project-copy">
 
           <div class="project-count">
-            02 / 03
+            05 / 06
           </div>
 
           <p class="project-label">
@@ -799,7 +1216,7 @@
 
           <h2>
             STUDENT LIBRARY<br>
-            <em>MANAGEMENT</em><br>
+            <em>Management</em><br>
             SYSTEM
           </h2>
 
@@ -868,7 +1285,7 @@
 
             <img
               class="project-image"
-              src="https://image.thum.io/get/width/1600/crop/900/noanimate/https://student-library-management-system-ten.vercel.app/"
+              src="assets/projects/library.jpg" width="1440" height="810" decoding="async"
               alt="Student Library Management System project screenshot"
               loading="lazy"
             />
@@ -891,7 +1308,7 @@
     ========================== -->
 
     <section
-      class="project project-3"
+      class="project project-6"
       id="project-ai"
     >
 
@@ -900,7 +1317,7 @@
         <div class="project-copy">
 
           <div class="project-count">
-            03 / 03
+            06 / 06
           </div>
 
           <p class="project-label">
@@ -909,7 +1326,7 @@
 
           <h2>
             AI POWERED<br>
-            <em>GREETINGS</em><br>
+            <em>Greetings</em><br>
             AUTOMATION
           </h2>
 
@@ -978,7 +1395,7 @@
 
             <img
               class="project-image"
-              src="https://image.thum.io/get/width/1600/crop/900/noanimate/https://ai-powered-greetings-automation-new.vercel.app/"
+              src="assets/projects/greetings.jpg" width="1440" height="810" decoding="async"
               alt="AI Powered Greetings Automation project screenshot"
               loading="lazy"
             />
@@ -1130,7 +1547,7 @@
 
       <h2 class="contact-title">
         LET'S MAKE<br>
-        <em>SOMETHING</em><br>
+        <em>Something</em><br>
         GREAT.
       </h2>
 
@@ -1251,8 +1668,7 @@
        MAIN JAVASCRIPT
   ========================== -->
 
-  <script src="script.js?v=sumit-neutral-3"></script>
+  <script src="script.js?v=premium-4"></script>
 
 </body>
 </html>
-```
